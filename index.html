@@ -6,14 +6,19 @@
 
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300&display=swap" rel="stylesheet">
-  <link rel="stylesheet" type="text/css" href="CSS/index.css">
+  <link rel="stylesheet" type="text/css" href="CSS/index.css" media = "(min-width: 576px)">
+  <link rel="stylesheet" type="text/css" href="CSS/mobile.css">
   
   <title>Frontend Mentor | Easybank landing page</title>
 </head>
 <body>
-
   <div class = "header">
     <img src = 'images\logo.svg' alt="logo">
+    <div class = "mobile-menu" id = "menu" onclick="toggleClass()">
+    	<span></span>
+    	<span></span>
+    	<span></span>
+    </div>
 
     <ul>
       <li><a> Home </a></li>
@@ -22,6 +27,18 @@
       <li><a> Blog </a></li>
       <li><a> Careers </a></li>
     </ul>
+
+    <div class="modal-menu" id = "modal-menu">
+    	<div class = "modal-list">
+	    	<ul>
+		      <li><a> Home </a></li>
+		      <li><a> About </a></li>
+		      <li><a> Contact </a></li>
+		      <li><a> Blog </a></li>
+		      <li><a> Careers </a></li>
+	    	</ul>
+	    </div>
+  	</div>
 
     <button class = "button">
       Request Invite
@@ -41,10 +58,11 @@
     </div>
     <div class = "right">
       <div class = "main-image">
-        <img src = "images\image-mockups.png" alt = "mockups">
+        <img src = "images\image-mockups.png" alt = "mockups" class = "mockup">
       </div>
       <div class = "main-image">
-        <img src="images\bg-intro-desktop.svg">
+        <img src="images\bg-intro-desktop.svg" class = "desktop-bg-image">
+        <img src="images\bg-intro-mobile.svg" class = "mobile-bg-image">
       </div>
     </div>
   </div>
@@ -63,7 +81,7 @@
       	<img src = "images/icon-online.svg" alt = "online">
         <span class = "content-title"> Online Banking </span>
         <span class = "content-subtitle"> Our modern web and mobile applications allow you to keep track of your finances 
-        wherever you are in the world.
+        wherever you are in the world.</span>
       </div>
       <div class = "content">
       	<img src = "images/icon-budgeting.svg" alt = "budgeting">
@@ -181,8 +199,12 @@
   </div>
   
   <div class="attribution">
-    Challenge by &#160;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor </a>. 
-    Coded by &#160;<a href="https://github.com/AlexIchenskiy" target="_blank"> Alex Ichenskiy </a>.
+  	<span>
+	    Challenge by &#160;<a href="https://www.frontendmentor.io?ref=challenge" target="_blank"> Frontend Mentor </a>. 
+	    Coded by &#160;<a href="https://github.com/AlexIchenskiy" target="_blank"> Alex Ichenskiy </a>.
+	</span>
   </div>
+
+  <script src="JS/script.js"></script>
 </body>
 </html>

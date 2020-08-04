@@ -1,4 +1,4 @@
-html {
+html, body {
 	overflow-x: hidden;
 }
 
@@ -20,7 +20,7 @@ body {
 .header {
 	grid-area: header;
 	display: flex;
-	padding: 8px 165px;
+	padding: 0 165px;
 	justify-content: space-between;
 	align-items: center;
 	background-color: hsl(0, 0%, 100%);
@@ -30,25 +30,53 @@ body {
 .header img {
 	height: 20px;
 	width: auto;
+	padding: 16px 0;
 }
 
 .header ul {
 	list-style-type: none;
-	overflow: hidden;
+	height: 52px;
+	margin: 0;
 }
 
 .header li {
 	display: block;
+	height: 100%;
 	float: left;
-}
-
-.header li a {
-	padding: 16px;
-	color: hsl(233, 8%, 62%);
+	display: flex;
+	align-items: center;
 }
 
 .header li:hover {
 	cursor: pointer;
+	background:
+    linear-gradient(
+      to left, 
+      hsl(136, 65%, 51%),
+      hsl(192, 70%, 51%)
+    )
+    left 
+    bottom  
+    no-repeat; 
+  	background-size:100% 2px ;
+}
+
+.header li:active a {
+	transform: scale(0.9);
+}
+
+.header li a {
+	padding: 0px 16px;
+	color: hsl(233, 8%, 62%);
+	transition: all 0.5s;
+}
+
+.header .mobile-menu {
+	display: none;
+}
+
+.modal-menu {
+	display: none;
 }
 
 .main {
@@ -103,6 +131,10 @@ body {
 	margin-top: -600px;
 	margin-left: -660px;
 	position: absolute;
+}
+
+.mobile-bg-image {
+	display: none;
 }
 
 .information {
