@@ -8,6 +8,8 @@
   <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@100;200;300&display=swap" rel="stylesheet">
   <link rel="stylesheet" type="text/css" href="CSS/index.css" media = "(min-width: 576px)">
   <link rel="stylesheet" type="text/css" href="CSS/mobile.css">
+
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   
   <title>Frontend Mentor | Easybank landing page</title>
 </head>
@@ -46,7 +48,7 @@
   </div>
 
   <div class = "main">
-    <div class = "left">
+    <div class = "left" data-aos="fade-down">
       <span class = "main-title"> Next generation digital banking </span>
 
       <span class = "main-subtitle"> Take your financial life online. Your Easybank account will be a one-stop-shop 
@@ -56,7 +58,7 @@
         Request Invite
       </button>
     </div>
-    <div class = "right">
+    <div class = "right" data-aos="fade-down">
       <div class = "main-image">
         <img src = "images\image-mockups.png" alt = "mockups" class = "mockup">
       </div>
@@ -68,7 +70,7 @@
   </div>
 
   <div class = "information">
-    <div class = "top">
+    <div class = "top" data-aos="fade-up">
       <span class = "information-title"> Why choose Easybank? </span>
       <span class = "information-subtitle"> 
         We leverage Open Banking to turn your bank account into your financial hub. Control 
@@ -76,7 +78,7 @@
       </span>
     </div>
 
-    <div class = "bottom">
+    <div class = "bottom" data-aos="fade-up">
       <div class = "content">
       	<img src = "images/icon-online.svg" alt = "online">
         <span class = "content-title"> Online Banking </span>
@@ -105,9 +107,9 @@
   </div>
 
   <div class = "articles">
-  	<span class = "articles-title"> Latest Articles </span>
+  	<span class = "articles-title" data-aos="fade-up"> Latest Articles </span>
 
-  	<div class = "articles-list">
+  	<div class = "articles-list" data-aos="fade-up">
   		<div class = "article">
   			<div class = "article-image">
   				<img src = "images/image-currency.jpg" alt = "currency">
@@ -206,5 +208,10 @@
   </div>
 
   <script src="JS/script.js"></script>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
 </body>
 </html>
