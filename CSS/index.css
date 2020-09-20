@@ -45,20 +45,15 @@ body {
 	float: left;
 	display: flex;
 	align-items: center;
+	background: linear-gradient(to right, hsl(136, 65%, 51%), hsl(192, 70%, 51%), #ffffff, #ffffff) no-repeat;
+  	background-size: 200% 2px;
+  	background-position: 200% bottom;
+    transition: background-position .5s;
 }
 
 .header li:hover {
 	cursor: pointer;
-	background:
-    linear-gradient(
-      to left, 
-      hsl(136, 65%, 51%),
-      hsl(192, 70%, 51%)
-    )
-    left 
-    bottom  
-    no-repeat; 
-  	background-size:100% 2px ;
+	background-position: 0% bottom;
 }
 
 .header li:active a {
@@ -308,7 +303,10 @@ body {
 	list-style-type: none;
 	display: flex;
 	justify-content: space-between;
-	transition: all 0.5s;
+}
+
+.footer .footer-left .images .social img {
+	transition: transform 0.5s;
 }
 
 .footer .footer-left .images .social img:hover {

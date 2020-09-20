@@ -317,6 +317,10 @@
 		margin-bottom: 25px;
 	}
 
+	.footer .footer-left .images .social img {
+		transition: transform 0.5s;
+	}
+
 	.footer .footer-left .images .social img:hover {
 		transform: scale(1.1);
 		cursor: pointer;
